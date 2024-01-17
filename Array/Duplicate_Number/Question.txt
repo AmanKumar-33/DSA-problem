@@ -1,0 +1,23 @@
+Remove Duplicates in-place from Sorted Array
+Problem Statement: Given an integer array sorted in non-decreasing order,
+remove the duplicates in place such that each unique element appears only once.
+The relative order of the elements should be kept the same.
+
+If there are k elements after removing the duplicates, then the first k elements
+of the array should hold the final result. It does not matter what you leave beyond the first k elements.
+
+
+int removeDuplicates(vector<int> &arr, int n) {
+	// Write your code here.
+	// set<data_type>set_name
+	hashset<int>set;
+	for(int i =0;i<n;i++){
+		set.insert(arr[i]);
+	}
+	int k = set.size();
+	int j =0;
+	for(int x : set){
+		arr[j] = x;
+	}
+	return k;
+}

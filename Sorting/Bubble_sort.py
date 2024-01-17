@@ -19,3 +19,6 @@ def bubble_sort(L):
 testlist = [1,3,5,7,2,6,25,18,13]
 bubble_sort(testlist)
 print(testlist)
+
+# the bubble sort algorithm is not efficient for large lists.
+# O(n^2) time complexity

@@ -1,0 +1,148 @@
+Questions 1-3: Consider the following code: 
+#include <iostream.h>
+ extern int x; // Statement a
+ int main()
+ {
+ int a, b; // Statement b
+ double d = 9; // Statement c
+ a = 1; // Statement d
+ b = 5; // Statement e
+ cout << x+ a/b + d/10 << endl;
+ } 
+1. Which line of the above code is both a definition and an initialization?
+Answer->statement c;
+2.Which line of the above code declares a variable without allocating memory for it?
+Statement a;
+3.Which lines of the above code are assignments?
+Statement d,e
+4 According to the following statement: const int *p; 
+a. the value of the pointer p cannot change 
+b. the value of the integer that p points to cannot change 
+c. both pointer p and the value of the integer that p points to cannot change 
+d. both pointer p and the value of the integer that p points to can change 
+e. p is a constant pointer to int
+
+5.When the following logical test is true? 
+( x>=y && ! x && x* y < 0 && y==0) 
+a. if x is greater than y, and y is equal to zero 
+b. if both x and y are equal to zero 
+c. if x is positive, and y is equal to zero 
+d. always
+e. never [/]
+
+6.Which of the following cases of mixed expressions is/are correct (circle the correct one(s)), 
+considering the following definition: 
+double d; float f; int i; char c;
+a. 'f' - 'd' is a double 
+b. f / 3.33 is a float [y]
+c. 'f' - 'd' is an int 
+d. 'f' - 'd' is a char 
+e. none of the above
+
+(7).What is the result of the statement following the definitions given below? 
+char c='b';
+char *pc=&c;
+char *&rc=pc ;
+
+(*rc)++;
+
+ a. it increases &rc
+ b. it stores 'b' in variable c
+ c. it increases *rc
+ d. it increases pc, by one byte 
+ e. none of the above
+
+
+8.Considering the following definitions, which of the provided statements (if any) are invalid? 
+double x= 0.5, y=4.9;
+
+ double *px, *py, &rx=x;
+
+a. px =&x; double &rx = *px ; [y]
+b. px = py; 
+c. double &ry = rx; 
+d. px = px = rx; 
+e. px = py = *x;
+
+9Considering the following definitions, which of the provided statements (if any), would give the value 
+of x, assuming that x is a double that has been properly defined and initialized to a value? 
+void *pp = &x;
+
+ double *px=&x;
+
+ double **ppx=&px;
+
+a. **ppx 
+b. *(static_cast <double*>(pp)) 
+c. *pp 
+d. *(*(&px)) 
+e. *( (double*)pp)
+
+11.What will be the value of x after the execution of the following line?
+    
+     int x = (7>6 ? 1+8 : 8)
+Answer-> 9
+
+12.Which of the following(s) is a (are) valid function declaration (i.e. prototype)? 
+a. void func(int x); 
+b. void func(int ){}; 
+c. func(9.5); 
+d. void func(int x){ // Function body };-> [y]
+e. void func(int);
+
+13 . Which of the following functions, whose declarations are given below, will be called: 
+float f;
+
+ printFun(2.0*f);
+
+a. void printFun(void) 
+b. void printFun(double) 
+c. void printFun(float) [y]
+d. float printFun(float)
+
+14.4. How many times is function fib called when num is 3, including the initial fib(3)? 
+int fib(int num) // Fibonacci value of a number
+
+{
+
+ switch(num)
+
+ {
+
+ case 0:
+
+ return(0);
+
+ break;
+
+ case 1:
+
+ return(1);
+
+ break;
+
+ default:
+
+ return(fib(num - 1) + fib(num - 2));
+ break;
+
+ }
+
+}
+
+a. 1 
+b. 4 
+c. 3 
+d. 5 
+e. non
+
+15. 15. In a function with return type void, what happens at return? 
+a. 0 is returned 
+b. 1 is returned 
+c. An arbitrary integer is returned 
+d. A void pointer is returned 
+e. No value is returned [y]
+
+
+
+
