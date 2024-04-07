@@ -1,0 +1,8 @@
+merge sort is divide and conquers algorithm it divide the array into two equal part and 
+merge the sorted array.
+there are two main function merge() and mergesort()
+
+
+low = leftmost index of the array
+high = rightmost index of the array
+mid = Middle index of the array 

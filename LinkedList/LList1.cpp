@@ -10,12 +10,23 @@ struct Node
 //  Node* first = NULL;
 // *first = NULL;
 // Node* temp = (Node*)malloc(sizeof(Node));
-int main(){
-    int n =0;
-     Node* first = NULL;
-    cout<<"Enter the number of nodes you want to create: ";
-   
-    cin>>n;
+int main(arc,_argv[]){
+    // memory for the number
+    node *List = NULL;
+    // for each command line argument
+    for(int i =0;i<argc;i++){
+        // create a new node
+        Node *temp = new Node;
+        // store the number
+        temp->data = atoi(argv[i]);
+        // point it to the old first node
+        temp->next = List;
+        // point first to the new node
+        List = temp;
+        
+    }
+
+    
 
 
 }

@@ -13,6 +13,10 @@ int main(){
 }
 void printColoum(int height){
     for(int i =0;i<=height;i++){
-        printf("#\n");
+        for(int j = i+1;i<height;i++){
+            printf("#\n ");
+
+        }
+        // printf("#\n");
     }
 }
