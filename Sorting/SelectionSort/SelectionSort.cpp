@@ -12,15 +12,12 @@ void selectionSort(int arr[],int n){
             }
 
         }
-    }
-    if(min != i){
         int temp = arr[i];
         arr[i] = arr[min];
         arr[min] = temp;
-    }
-
-
+        
     
+    }
 }
 int main(){
     int n;
